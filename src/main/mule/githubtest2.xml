@@ -34,5 +34,16 @@ output application/json
 			</ee:transform>
 		</try>
 		<set-payload value="#[payload]" doc:name="Set Payload" doc:id="a4179501-8389-402c-bcf7-c7a00fc17596" />
+		<flow-ref doc:name="Flow Reference" doc:id="4618edd5-924a-4ef3-90ee-2e36db88d568" name="githubtest2Flow1"/>
+	</flow>
+	<flow name="githubtest2Flow1" doc:id="de0ba7dc-399a-4068-be58-3436df4bd938" >
+		<ee:transform doc:name="Transform Message" doc:id="522e025e-4849-42c3-a8cf-f136afb1fe0e" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/csv
+---
+payload]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
 	</flow>
 </mule>
