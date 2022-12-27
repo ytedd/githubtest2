@@ -28,6 +28,7 @@ output application/json
 output application/json
 ---
 {
+	"neue Message": "sehr wichtiges blablablub"
 }]]></ee:set-payload>
 				</ee:message>
 			</ee:transform>
