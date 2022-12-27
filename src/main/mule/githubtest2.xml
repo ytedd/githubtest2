@@ -25,12 +25,13 @@ output application/json
 			<ee:transform doc:name="Transform Message" doc:id="b15e53f6-4d05-4c42-a05a-f2abfed2781f" >
 				<ee:message >
 					<ee:set-payload ><![CDATA[%dw 2.0
-output application/java
+output application/json
 ---
 {
 }]]></ee:set-payload>
 				</ee:message>
 			</ee:transform>
 		</try>
+		<set-payload value="#[payload]" doc:name="Set Payload" doc:id="a4179501-8389-402c-bcf7-c7a00fc17596" />
 	</flow>
 </mule>
