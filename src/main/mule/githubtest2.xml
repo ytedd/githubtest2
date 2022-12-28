@@ -45,5 +45,6 @@ output application/csv
 payload]]></ee:set-payload>
 			</ee:message>
 		</ee:transform>
+		<set-variable value="#[payload]" doc:name="Payload" doc:id="3c92ef1b-cb16-4f80-acdc-d06bd795c334" variableName="Payload"/>
 	</flow>
 </mule>
